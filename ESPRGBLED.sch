@@ -6040,6 +6040,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="DGND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<text x="-2.667" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="DGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="+12V" prefix="SUPPLY">
@@ -6059,6 +6066,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DGND" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6109,7 +6129,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="17.4" y1="0" x2="17.4" y2="12.2" width="0.127" layer="21"/>
 <wire x1="0" y1="0" x2="0" y2="12.2" width="0.127" layer="21"/>
 <wire x1="0" y1="12.2" x2="17.4" y2="12.2" width="0.127" layer="21"/>
-<rectangle x1="0.6" y1="0.6" x2="2.6" y2="11.4" layer="21"/>
 <smd name="VCC" x="4" y="-0.2" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="GPIO14" x="6" y="-0.2" dx="1.5" dy="1" layer="1" rot="R90"/>
 <smd name="GPIO12" x="8" y="-0.2" dx="1.5" dy="1" layer="1" rot="R90"/>
@@ -6137,6 +6156,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="12.2" y1="2.6" x2="17.2" y2="2.6" width="0.127" layer="21"/>
 <wire x1="17.2" y1="2.6" x2="17.2" y2="7.4" width="0.127" layer="21"/>
 <wire x1="17.2" y1="7.4" x2="12.2" y2="7.4" width="0.127" layer="21"/>
+<rectangle x1="0" y1="0" x2="3.2" y2="12.2" layer="42"/>
+<rectangle x1="0" y1="0" x2="3.2" y2="12.2" layer="41"/>
+<dimension x1="0" y1="12.2" x2="0" y2="0" x3="-2.2" y3="6.1" textsize="0.8128" textratio="6" layer="48" width="0.1"/>
 </package>
 </packages>
 <symbols>
@@ -6276,10 +6298,10 @@ http://www.zetex.com&lt;p&gt;
 <smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="1.0208" y="-4.318" size="0.8128" layer="21" ratio="12">3</text>
-<text x="1.905" y="2.54" size="0.8128" layer="21" ratio="12">4</text>
-<text x="-3.4526" y="-4.318" size="0.8128" layer="21" ratio="12">1</text>
-<text x="-1.2906" y="-4.3274" size="0.8128" layer="21" ratio="12">2</text>
+<text x="1.0208" y="-4.318" size="0.8128" layer="51" ratio="12">3</text>
+<text x="1.905" y="2.54" size="0.8128" layer="51" ratio="12">4</text>
+<text x="-3.4526" y="-4.318" size="0.8128" layer="51" ratio="12">1</text>
+<text x="-1.2906" y="-4.3274" size="0.8128" layer="51" ratio="12">2</text>
 <text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
@@ -6430,6 +6452,7 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="D1" gate="G$1" pin="A"/>
 <label x="99.06" y="63.5" size="1.778" layer="95"/>
 <pinref part="T1" gate="A" pin="D"/>
+<junction x="78.74" y="60.96"/>
 </segment>
 </net>
 </nets>
@@ -6440,16 +6463,13 @@ http://www.zetex.com&lt;p&gt;
 <parts>
 <part name="U$1" library="Fabian" deviceset="LM1117" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="ESP8266" deviceset="ESP8266" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="+12V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+12V" device=""/>
@@ -6460,10 +6480,6 @@ http://www.zetex.com&lt;p&gt;
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603K"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805K"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805K"/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="MBRS130LT3" device=""/>
 <part name="U$3" library="Fabian" deviceset="3-WIRE_CONN" device="WIRE"/>
 <part name="U$4" library="Fabian" deviceset="CON1" device=""/>
@@ -6473,6 +6489,18 @@ http://www.zetex.com&lt;p&gt;
 <part name="U$8" library="Fabian" deviceset="CON1" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="U$9" library="Fabian" deviceset="CON1" device=""/>
+<part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
+<part name="SUPPLY11" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY15" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY16" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY17" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY18" library="supply2" deviceset="DGND" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="DGND" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -6486,16 +6514,13 @@ http://www.zetex.com&lt;p&gt;
 <instances>
 <instance part="U$1" gate="G$1" x="7.62" y="83.82"/>
 <instance part="SUPPLY2" gate="G$1" x="78.74" y="91.44"/>
-<instance part="GND1" gate="1" x="40.64" y="22.86"/>
 <instance part="U$2" gate="G$1" x="71.12" y="33.02" rot="MR0"/>
 <instance part="SUPPLY3" gate="+12V" x="121.92" y="165.1"/>
 <instance part="GND5" gate="1" x="121.92" y="124.46"/>
 <instance part="SUPPLY4" gate="+12V" x="-20.32" y="96.52"/>
 <instance part="SUPPLY5" gate="G$1" x="27.94" y="93.98"/>
-<instance part="GND6" gate="1" x="7.62" y="63.5"/>
 <instance part="SUPPLY6" gate="+12V" x="-45.72" y="139.7"/>
 <instance part="GND7" gate="1" x="-45.72" y="96.52"/>
-<instance part="GND8" gate="1" x="10.16" y="38.1"/>
 <instance part="R5" gate="G$1" x="38.1" y="78.74" rot="R90"/>
 <instance part="SUPPLY7" gate="G$1" x="38.1" y="93.98"/>
 <instance part="SUPPLY1" gate="+12V" x="121.92" y="109.22"/>
@@ -6506,10 +6531,6 @@ http://www.zetex.com&lt;p&gt;
 <instance part="C2" gate="G$1" x="27.94" y="78.74"/>
 <instance part="C3" gate="G$1" x="-12.7" y="78.74"/>
 <instance part="C4" gate="G$1" x="22.86" y="78.74"/>
-<instance part="GND4" gate="1" x="-20.32" y="63.5"/>
-<instance part="GND9" gate="1" x="-12.7" y="63.5"/>
-<instance part="GND10" gate="1" x="22.86" y="63.5"/>
-<instance part="GND11" gate="1" x="27.94" y="63.5"/>
 <instance part="D1" gate="G$1" x="-45.72" y="119.38" rot="R90"/>
 <instance part="U$3" gate="G$1" x="0" y="48.26" rot="R90"/>
 <instance part="U$4" gate="G$1" x="152.4" y="149.86"/>
@@ -6519,6 +6540,18 @@ http://www.zetex.com&lt;p&gt;
 <instance part="U$8" gate="G$1" x="2.54" y="137.16"/>
 <instance part="SUPPLY9" gate="+12V" x="0" y="149.86"/>
 <instance part="GND12" gate="1" x="0" y="134.62"/>
+<instance part="U$9" gate="G$1" x="149.86" y="162.56"/>
+<instance part="SUPPLY10" gate="+12V" x="147.32" y="165.1"/>
+<instance part="SUPPLY11" gate="G$1" x="17.78" y="20.32"/>
+<instance part="SUPPLY13" gate="G$1" x="-20.32" y="63.5"/>
+<instance part="SUPPLY14" gate="G$1" x="-12.7" y="63.5"/>
+<instance part="SUPPLY15" gate="G$1" x="7.62" y="63.5"/>
+<instance part="SUPPLY16" gate="G$1" x="22.86" y="63.5"/>
+<instance part="SUPPLY17" gate="G$1" x="27.94" y="63.5"/>
+<instance part="SUPPLY18" gate="G$1" x="10.16" y="38.1"/>
+<instance part="SUPPLY19" gate="G$1" x="40.64" y="22.86"/>
+<instance part="GND1" gate="1" x="2.54" y="20.32"/>
+<instance part="R1" gate="G$1" x="10.16" y="27.94" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -6557,35 +6590,16 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="U$7" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
 </segment>
+<segment>
+<pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+</segment>
 </net>
 <net name="GND" class="1">
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="43.18" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="35.56" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GPIO15"/>
-<wire x1="40.64" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="45.72" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
-<junction x="40.64" y="27.94"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="7.62" y1="71.12" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-45.72" y1="116.84" x2="-45.72" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="7.62" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="45.72" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="0V"/>
 </segment>
 <segment>
 <portref moduleinst="PWR1" port="GND"/>
@@ -6601,28 +6615,14 @@ http://www.zetex.com&lt;p&gt;
 <portref moduleinst="PWR3" port="GND"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-20.32" y1="66.04" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="-12.7" y1="66.04" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="2"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="22.86" y1="66.04" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="27.94" y1="66.04" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$8" gate="G$1" pin="P$1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="2.54" y1="22.86" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6707,25 +6707,78 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="93.98" y1="50.8" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
 <portref moduleinst="PWR3" port="CTL"/>
+<pinref part="U$2" gate="G$1" pin="GPIO13"/>
+<wire x1="78.74" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="N$1" class="1">
 <segment>
 <portref moduleinst="PWR1" port="OUT"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="149.86" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="N$4" class="1">
 <segment>
 <portref moduleinst="PWR2" port="OUT"/>
 <pinref part="U$5" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="N$5" class="1">
 <segment>
 <portref moduleinst="PWR3" port="OUT"/>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
+</segment>
+</net>
+<net name="DGND" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="66.04" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="66.04" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="7.62" y1="71.12" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="66.04" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="66.04" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="SUPPLY17" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<wire x1="7.62" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="0V"/>
+<pinref part="SUPPLY18" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="43.18" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="35.56" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GPIO15"/>
+<wire x1="40.64" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="45.72" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<junction x="40.64" y="27.94"/>
+<pinref part="SUPPLY19" gate="G$1" pin="DGND"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="15.24" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="DGND"/>
+<wire x1="17.78" y1="27.94" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
