@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,16 +43,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -213,7 +213,7 @@
 <text x="1.905" y="-2.54" size="2.1844" layer="25">s</text>
 </package>
 <package name="CON1HP">
-<smd name="P$1" x="0" y="0" dx="5.08" dy="2.54" layer="1" roundness="40"/>
+<smd name="P$1" x="0" y="0" dx="3.5" dy="2" layer="1" roundness="40"/>
 </package>
 </packages>
 <symbols>
@@ -6396,10 +6396,15 @@ http://www.zetex.com&lt;p&gt;
 <variantdefs>
 </variantdefs>
 <parts>
-<part name="D1" library="diode" deviceset="MBRS130LT3" device=""/>
+<part name="D1" library="diode" deviceset="MBRS130LT3" device="">
+<attribute name="MF" value="ON SEMICONDUCTOR"/>
+<attribute name="MPN" value="MBRS130LT3G"/>
+<attribute name="OC_FARNELL" value="2125539"/>
+</part>
 <part name="T1" library="zetex" deviceset="NMOSSOT223" device="">
+<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR"/>
 <attribute name="MPN" value="FDT439N"/>
-<attribute name="OC_FARNELL" value="2438463"/>
+<attribute name="OC_FARNELL" value="1471058"/>
 </part>
 </parts>
 <sheets>
@@ -6407,7 +6412,11 @@ http://www.zetex.com&lt;p&gt;
 <plain>
 </plain>
 <instances>
-<instance part="D1" gate="G$1" x="78.74" y="66.04" rot="R90"/>
+<instance part="D1" gate="G$1" x="78.74" y="66.04" rot="R90">
+<attribute name="OC_FARNELL" x="78.74" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="78.74" y="66.04" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="78.74" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="T1" gate="A" x="78.74" y="53.34">
 <attribute name="OC_FARNELL" x="78.74" y="53.34" size="1.778" layer="96" display="both"/>
 </instance>
@@ -6461,35 +6470,95 @@ http://www.zetex.com&lt;p&gt;
 </module>
 </modules>
 <parts>
-<part name="U$1" library="Fabian" deviceset="LM1117" device=""/>
+<part name="U$1" library="Fabian" deviceset="LM1117" device="">
+<attribute name="MF" value="STMICROELECTRONICS"/>
+<attribute name="MPN" value="LD1117S33TR"/>
+<attribute name="OC_FARNELL" value="1202826"/>
+</part>
 <part name="SUPPLY2" library="supply2" deviceset="VCC" device=""/>
-<part name="U$2" library="ESP8266" deviceset="ESP8266" device=""/>
+<part name="U$2" library="ESP8266" deviceset="ESP8266" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 <part name="SUPPLY3" library="supply2" deviceset="+12V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="+12V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
+<attribute name="MF" value="WELWYN"/>
+<attribute name="MPN" value="ASC0603-10KFT5"/>
+<attribute name="OC_FARNELL" value="2078915RL"/>
+</part>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="+12V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="+12V" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603K"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603K"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805K"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0805K"/>
-<part name="D1" library="diode" deviceset="MBRS130LT3" device=""/>
-<part name="U$3" library="Fabian" deviceset="3-WIRE_CONN" device="WIRE"/>
-<part name="U$4" library="Fabian" deviceset="CON1" device=""/>
-<part name="U$5" library="Fabian" deviceset="CON1" device=""/>
-<part name="U$6" library="Fabian" deviceset="CON1" device=""/>
-<part name="U$7" library="Fabian" deviceset="CON1" device=""/>
-<part name="U$8" library="Fabian" deviceset="CON1" device=""/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603K">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="0603YC104K4T4A"/>
+<attribute name="OC_FARNELL" value="1833863"/>
+</part>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603K">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="0603YC104K4T4A"/>
+<attribute name="OC_FARNELL" value="1833863"/>
+</part>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805K">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="08055C224KAZ2A"/>
+<attribute name="OC_FARNELL" value="2332797"/>
+</part>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805K">
+<attribute name="MF" value="AVX"/>
+<attribute name="MPN" value="08055C224KAZ2A"/>
+<attribute name="OC_FARNELL" value="2332797"/>
+</part>
+<part name="D1" library="diode" deviceset="MBRS130LT3" device="">
+<attribute name="MF" value="ON SEMICONDUCTOR"/>
+<attribute name="MPN" value="MBRS130LT3G"/>
+<attribute name="OC_FARNELL" value="2125539"/>
+</part>
+<part name="U$3" library="Fabian" deviceset="3-WIRE_CONN" device="WIRE">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$4" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$5" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$6" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$7" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="U$8" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 <part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="U$9" library="Fabian" deviceset="CON1" device=""/>
+<part name="U$9" library="Fabian" deviceset="CON1" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 <part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
@@ -6500,7 +6569,16 @@ http://www.zetex.com&lt;p&gt;
 <part name="SUPPLY18" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="DGND" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="0R">
+<attribute name="MF" value="BOURNS"/>
+<attribute name="MPN" value="CR0603-J/-000ELF"/>
+<attribute name="OC_FARNELL" value="2467553"/>
+</part>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="0R">
+<attribute name="MF" value="BOURNS"/>
+<attribute name="MPN" value="CR0603-J/-000ELF"/>
+<attribute name="OC_FARNELL" value="2467553"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -6512,35 +6590,95 @@ http://www.zetex.com&lt;p&gt;
 <moduleinst name="PWR3" module="POWER_N" x="121.92" y="40.64"/>
 </moduleinsts>
 <instances>
-<instance part="U$1" gate="G$1" x="7.62" y="83.82"/>
+<instance part="U$1" gate="G$1" x="7.62" y="83.82">
+<attribute name="OC_FARNELL" x="7.62" y="83.82" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="7.62" y="83.82" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="7.62" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY2" gate="G$1" x="78.74" y="91.44"/>
-<instance part="U$2" gate="G$1" x="71.12" y="33.02" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="71.12" y="33.02" rot="MR0">
+<attribute name="OC_FARNELL" x="71.12" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="71.12" y="33.02" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="71.12" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY3" gate="+12V" x="121.92" y="165.1"/>
 <instance part="GND5" gate="1" x="121.92" y="124.46"/>
 <instance part="SUPPLY4" gate="+12V" x="-20.32" y="96.52"/>
 <instance part="SUPPLY5" gate="G$1" x="27.94" y="93.98"/>
 <instance part="SUPPLY6" gate="+12V" x="-45.72" y="139.7"/>
 <instance part="GND7" gate="1" x="-45.72" y="96.52"/>
-<instance part="R5" gate="G$1" x="38.1" y="78.74" rot="R90"/>
+<instance part="R5" gate="G$1" x="38.1" y="78.74" rot="R90">
+<attribute name="OC_FARNELL" x="38.1" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="38.1" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="38.1" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY7" gate="G$1" x="38.1" y="93.98"/>
 <instance part="SUPPLY1" gate="+12V" x="121.92" y="109.22"/>
 <instance part="GND2" gate="1" x="121.92" y="73.66"/>
 <instance part="GND3" gate="1" x="121.92" y="22.86"/>
 <instance part="SUPPLY8" gate="+12V" x="121.92" y="58.42"/>
-<instance part="C1" gate="G$1" x="-20.32" y="78.74"/>
-<instance part="C2" gate="G$1" x="27.94" y="78.74"/>
-<instance part="C3" gate="G$1" x="-12.7" y="78.74"/>
-<instance part="C4" gate="G$1" x="22.86" y="78.74"/>
-<instance part="D1" gate="G$1" x="-45.72" y="119.38" rot="R90"/>
-<instance part="U$3" gate="G$1" x="0" y="48.26" rot="R90"/>
-<instance part="U$4" gate="G$1" x="152.4" y="149.86"/>
-<instance part="U$5" gate="G$1" x="144.78" y="96.52"/>
-<instance part="U$6" gate="G$1" x="144.78" y="45.72"/>
-<instance part="U$7" gate="G$1" x="2.54" y="147.32"/>
-<instance part="U$8" gate="G$1" x="2.54" y="137.16"/>
+<instance part="C1" gate="G$1" x="-20.32" y="78.74">
+<attribute name="OC_FARNELL" x="-20.32" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-20.32" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-20.32" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="27.94" y="78.74">
+<attribute name="OC_FARNELL" x="27.94" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="27.94" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="27.94" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="-12.7" y="78.74">
+<attribute name="OC_FARNELL" x="-12.7" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-12.7" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-12.7" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C4" gate="G$1" x="22.86" y="78.74">
+<attribute name="OC_FARNELL" x="22.86" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="22.86" y="78.74" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="D1" gate="G$1" x="-45.72" y="119.38" rot="R90">
+<attribute name="OC_FARNELL" x="-45.72" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="-45.72" y="119.38" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="-45.72" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$3" gate="G$1" x="0" y="48.26" rot="R90">
+<attribute name="OC_FARNELL" x="0" y="48.26" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="0" y="48.26" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="0" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$4" gate="G$1" x="152.4" y="149.86">
+<attribute name="OC_FARNELL" x="152.4" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="152.4" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="152.4" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$5" gate="G$1" x="144.78" y="96.52">
+<attribute name="OC_FARNELL" x="144.78" y="96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="144.78" y="96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="144.78" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$6" gate="G$1" x="144.78" y="45.72">
+<attribute name="OC_FARNELL" x="144.78" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="144.78" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="144.78" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$7" gate="G$1" x="2.54" y="147.32">
+<attribute name="OC_FARNELL" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$8" gate="G$1" x="2.54" y="137.16">
+<attribute name="OC_FARNELL" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY9" gate="+12V" x="0" y="149.86"/>
 <instance part="GND12" gate="1" x="0" y="134.62"/>
-<instance part="U$9" gate="G$1" x="149.86" y="162.56"/>
+<instance part="U$9" gate="G$1" x="149.86" y="162.56">
+<attribute name="OC_FARNELL" x="149.86" y="162.56" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="149.86" y="162.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="149.86" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY10" gate="+12V" x="147.32" y="165.1"/>
 <instance part="SUPPLY11" gate="G$1" x="17.78" y="20.32"/>
 <instance part="SUPPLY13" gate="G$1" x="-20.32" y="63.5"/>
@@ -6551,7 +6689,16 @@ http://www.zetex.com&lt;p&gt;
 <instance part="SUPPLY18" gate="G$1" x="10.16" y="38.1"/>
 <instance part="SUPPLY19" gate="G$1" x="40.64" y="22.86"/>
 <instance part="GND1" gate="1" x="2.54" y="20.32"/>
-<instance part="R1" gate="G$1" x="10.16" y="27.94" rot="R180"/>
+<instance part="R1" gate="G$1" x="10.16" y="27.94" rot="R180">
+<attribute name="OC_FARNELL" x="10.16" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="10.16" y="27.94" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="10.16" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="66.04" y="17.78" rot="R180">
+<attribute name="OC_FARNELL" x="66.04" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="66.04" y="17.78" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="66.04" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6770,15 +6917,29 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="40.64" y1="27.94" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="45.72" x2="86.36" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="45.72" x2="86.36" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
 <junction x="40.64" y="27.94"/>
 <pinref part="SUPPLY19" gate="G$1" pin="DGND"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="27.94" x2="40.64" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="17.78" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
+<junction x="60.96" y="27.94"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="DGND"/>
 <wire x1="17.78" y1="27.94" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="GPIO0"/>
+<wire x1="76.2" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="20.32" x2="83.82" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
