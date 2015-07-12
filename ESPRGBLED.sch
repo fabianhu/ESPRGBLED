@@ -212,9 +212,6 @@
 <text x="-0.9525" y="-2.8575" size="2.1844" layer="25">+</text>
 <text x="1.905" y="-2.54" size="2.1844" layer="25">s</text>
 </package>
-<package name="CON1HP">
-<smd name="P$1" x="0" y="0" dx="3.5" dy="2" layer="1" roundness="40"/>
-</package>
 </packages>
 <symbols>
 <symbol name="LM1117">
@@ -237,10 +234,6 @@
 <pin name="0V" x="-2.54" y="-7.62" visible="pin" length="middle" rot="R90"/>
 <pin name="5V" x="0" y="-7.62" visible="pin" length="middle" rot="R90"/>
 <pin name="SIG" x="2.54" y="-7.62" visible="pin" length="middle" rot="R90"/>
-</symbol>
-<symbol name="CONN1">
-<pin name="P$1" x="-2.54" y="0" length="middle"/>
-<circle x="1.27" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -287,21 +280,6 @@ Order No: LM1117MP-3.3</description>
 <connect gate="G$1" pin="0V" pad="-"/>
 <connect gate="G$1" pin="5V" pad="+"/>
 <connect gate="G$1" pin="SIG" pad="S"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CON1">
-<gates>
-<gate name="G$1" symbol="CONN1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CON1HP">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6419,6 +6397,60 @@ or will meet your specific requirements.&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="solpad">
+<description>&lt;b&gt;Solder Pads/Test Points&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="LSP10">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt;
+drill 1.0 mm</description>
+<wire x1="-1.27" y1="0.254" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.254" x2="1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.254" x2="-1.143" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.254" x2="0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-1.143" y1="-0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0.254" x2="-0.635" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.254" x2="1.143" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-0.635" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="0.254" x2="-1.143" y2="0.254" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-0.254" x2="0.635" y2="-0.254" width="0.1524" layer="51"/>
+<pad name="MP" x="0" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.254" size="0.0254" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LSP">
+<wire x1="-1.016" y1="2.032" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="0" x2="1.016" y2="2.032" width="0.254" layer="94"/>
+<circle x="0" y="1.016" radius="1.016" width="0.4064" layer="94"/>
+<text x="-1.27" y="2.921" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MP" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LSP10" prefix="LSP">
+<description>&lt;b&gt;SOLDER PAD&lt;/b&gt;&lt;p&gt; drill 1.0 mm, distributor Buerklin, 12H555</description>
+<gates>
+<gate name="1" symbol="LSP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LSP10">
+<connects>
+<connect gate="1" pin="MP" pad="MP"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6567,38 +6599,8 @@ or will meet your specific requirements.&lt;p&gt;
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="U$4" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="U$5" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="U$6" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="U$7" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
-<part name="U$8" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
 <part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="U$9" library="Fabian" deviceset="CON1" device="">
-<attribute name="MF" value=""/>
-<attribute name="MPN" value=""/>
-<attribute name="OC_FARNELL" value="unknown"/>
-</part>
 <part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="DGND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="DGND" device=""/>
@@ -6631,7 +6633,13 @@ or will meet your specific requirements.&lt;p&gt;
 <attribute name="OC_FARNELL" value="2078915RL"/>
 </part>
 <part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="LSP1" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP2" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP3" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP4" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP5" library="solpad" deviceset="LSP10" device=""/>
+<part name="LSP6" library="solpad" deviceset="LSP10" device=""/>
+<part name="SUPPLY20" library="supply2" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6695,38 +6703,8 @@ or will meet your specific requirements.&lt;p&gt;
 <attribute name="MF" x="0" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="0" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$4" gate="G$1" x="162.56" y="149.86">
-<attribute name="OC_FARNELL" x="162.56" y="149.86" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="162.56" y="149.86" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="162.56" y="149.86" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$5" gate="G$1" x="154.94" y="96.52">
-<attribute name="OC_FARNELL" x="154.94" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="154.94" y="96.52" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="154.94" y="96.52" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$6" gate="G$1" x="154.94" y="45.72">
-<attribute name="OC_FARNELL" x="154.94" y="45.72" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="154.94" y="45.72" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="154.94" y="45.72" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$7" gate="G$1" x="2.54" y="147.32">
-<attribute name="OC_FARNELL" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="2.54" y="147.32" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="U$8" gate="G$1" x="2.54" y="137.16">
-<attribute name="OC_FARNELL" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="2.54" y="137.16" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="SUPPLY9" gate="+12V" x="0" y="149.86"/>
 <instance part="GND12" gate="1" x="0" y="134.62"/>
-<instance part="U$9" gate="G$1" x="160.02" y="162.56">
-<attribute name="OC_FARNELL" x="160.02" y="162.56" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="160.02" y="162.56" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="160.02" y="162.56" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="SUPPLY10" gate="+12V" x="157.48" y="165.1"/>
 <instance part="SUPPLY11" gate="G$1" x="17.78" y="20.32"/>
 <instance part="SUPPLY13" gate="G$1" x="-20.32" y="63.5"/>
@@ -6759,7 +6737,13 @@ or will meet your specific requirements.&lt;p&gt;
 <attribute name="MPN" x="96.52" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY12" gate="+12V" x="96.52" y="43.18"/>
-<instance part="GND4" gate="1" x="96.52" y="7.62"/>
+<instance part="LSP1" gate="1" x="172.72" y="162.56" rot="R270"/>
+<instance part="LSP2" gate="1" x="172.72" y="149.86" rot="R270"/>
+<instance part="LSP3" gate="1" x="172.72" y="96.52" rot="R270"/>
+<instance part="LSP4" gate="1" x="175.26" y="45.72" rot="R270"/>
+<instance part="LSP5" gate="1" x="22.86" y="147.32" rot="R270"/>
+<instance part="LSP6" gate="1" x="22.86" y="137.16" rot="R270"/>
+<instance part="SUPPLY20" gate="G$1" x="96.52" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -6795,12 +6779,14 @@ or will meet your specific requirements.&lt;p&gt;
 <portref moduleinst="PWR3" port="SUPP"/>
 </segment>
 <segment>
-<pinref part="U$7" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
+<wire x1="20.32" y1="147.32" x2="0" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="LSP5" gate="1" pin="MP"/>
 </segment>
 <segment>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+<wire x1="170.18" y1="162.56" x2="157.48" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="LSP1" gate="1" pin="MP"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="+12V" pin="+12V"/>
@@ -6828,19 +6814,15 @@ or will meet your specific requirements.&lt;p&gt;
 <portref moduleinst="PWR3" port="GND"/>
 </segment>
 <segment>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="20.32" y1="137.16" x2="0" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="LSP6" gate="1" pin="MP"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="2.54" y1="22.86" x2="2.54" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="2.54" y1="27.94" x2="5.08" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="96.52" y1="12.7" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6932,20 +6914,22 @@ or will meet your specific requirements.&lt;p&gt;
 <net name="N$1" class="1">
 <segment>
 <portref moduleinst="PWR1" port="OUT"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
-<wire x1="160.02" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="149.86" x2="152.4" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="LSP2" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$4" class="1">
 <segment>
 <portref moduleinst="PWR2" port="OUT"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="170.18" y1="96.52" x2="152.4" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="LSP3" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="N$5" class="1">
 <segment>
 <portref moduleinst="PWR3" port="OUT"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="172.72" y1="45.72" x2="152.4" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="LSP4" gate="1" pin="MP"/>
 </segment>
 </net>
 <net name="DGND" class="0">
@@ -7000,6 +6984,11 @@ or will meet your specific requirements.&lt;p&gt;
 <wire x1="15.24" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY11" gate="G$1" pin="DGND"/>
 <wire x1="17.78" y1="27.94" x2="17.78" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="12.7" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="SUPPLY20" gate="G$1" pin="DGND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
