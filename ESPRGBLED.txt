@@ -1,0 +1,16 @@
+Stückliste exportiert aus D:/projekt/work/#Github/ESPRGBLED/ESPRGBLED.sch am 27.07.2015 08:04
+
+Qty Value      Device                    Package        Parts                         Description                                             MF                      MPN              OC_FARNELL OC_NEWARK
+1              3-WIRE_CONNWIRE           3-WIRE_CONN    U$3                           three wire solder point                                                                          unknown             
+2              C-EUC0603K                C0603K         C1, C2                        CAPACITOR, European symbol                              AVX                     0603YC104K4T4A   1833863             
+2              C-EUC0805K                C0805K         C3, C4                        CAPACITOR, European symbol                              AVX                     08055C224KAZ2A   2332797             
+1              ESP8266-12EESP8266-ESP12E ESP8266-ESP12E MDL1                          ESP8266-12E with additional I/O and GPIO04/05 corrected                                                              
+3              NMOSSOT223                SOT223         PWR1:T1, PWR2:T1, PWR3:T1     MOS FET                                                 FAIRCHILD SEMICONDUCTOR FDT439N          1471058    unknown  
+1   0R         R-EU_R0603                R0603          R1                            RESISTOR, European symbol                               BOURNS                  CR0603-J/-000ELF 2467553             
+1   0R         R-EU_R0805                R0805          R2                            RESISTOR, European symbol                               BOURNS                  CR0603-J/-000ELF 2467553             
+1   0R-JUMPC   0R-JUMPC                  C0R-JMP        JMP1                          SMD 0R 0805 Jumper                                                                                                   
+1   100k       R-EU_R0603                R0603          R3                            RESISTOR, European symbol                               WELWYN                  ASC0603-10KFT5   2078915RL           
+1   10k        R-EU_R0603                R0603          R4                            RESISTOR, European symbol                               WELWYN                  ASC0603-10KFT5   2078915RL           
+1   LM1117     LM1117                    SOT223         U$1                           lm1117 from National semi,                              STMICROELECTRONICS      LD1117S33TR      1202826             
+6   LSP10      LSP10                     LSP10          +, 12, 12V, 13, 14, GND       SOLDER PAD drill 1.0 mm, distributor Buerklin, 12H555                                                                
+4   MBRS130LT3 MBRS130LT3                SMB            D1, PWR1:D1, PWR2:D1, PWR3:D1 Schottky Power Rectifier                                ON SEMICONDUCTOR        MBRS130LT3G      2125539             
