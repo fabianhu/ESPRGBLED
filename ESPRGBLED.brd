@@ -1671,14 +1671,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="16.04" y="12.445" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="rcl" package="C0805K" value="" x="18.57375" y="8.89" smashed="yes" rot="R180">
-<attribute name="OC_FARNELL" value="2332797" x="18.57375" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1759173RL" x="18.57375" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="18.57375" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="08055C224KAZ2A" x="18.57375" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="21.0025" y="7.85625" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="19.57375" y="10.79" size="1.016" layer="27" rot="R180"/>
 </element>
 <element name="C4" library="rcl" package="C0805K" value="" x="14.9225" y="8.89" smashed="yes" rot="R180">
-<attribute name="OC_FARNELL" value="2332797" x="14.9225" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1759173RL" x="14.9225" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="AVX" x="14.9225" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="08055C224KAZ2A" x="14.9225" y="8.89" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="13.85875" y="7.85625" size="1.016" layer="25" rot="R180"/>
@@ -1706,10 +1706,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MF" value="BOURNS" x="14.2875" y="23.8125" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="11.7475" y="23.1775" size="1.27" layer="26" font="vector" rot="MR0"/>
 </element>
-<element name="MDL1" library="ESP8266-ESP12E" package="ESP8266-ESP12E" value="" x="3.4925" y="20.32" smashed="yes" rot="MR180"/>
+<element name="MDL1" library="ESP8266-ESP12E" package="ESP8266-ESP12E" value="" x="3.4925" y="20.32" smashed="yes" rot="MR180">
+<attribute name="OC_FARNELL" value="unknown" x="3.4925" y="20.32" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MF" value="" x="3.4925" y="20.32" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="" x="3.4925" y="20.32" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
 <element name="R3" library="rcl" package="R0603" value="100k" x="2.54" y="6.6675" smashed="yes">
 <attribute name="MF" value="WELWYN" x="2.54" y="6.6675" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="2078915RL" x="2.54" y="6.6675" size="1.778" layer="27" display="off"/>
+<attribute name="OC_FARNELL" value="2078921" x="2.54" y="6.6675" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ASC0603-10KFT5" x="2.54" y="6.6675" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-0.15875" y="7.46125" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="1.905" y="4.7625" size="1.27" layer="27"/>
@@ -1724,28 +1728,50 @@ Please make sure your boards conform to these design rules.</description>
 <element name="+" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="16.1925" smashed="yes">
 <attribute name="NAME" x="2.54" y="17.145" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="0.9525" y="16.4465" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="16.1925" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="16.1925" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="16.1925" size="1.778" layer="27" display="off"/>
 </element>
 <element name="13" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="23.8125" smashed="yes">
 <attribute name="NAME" x="2.2225" y="24.765" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="0.9525" y="24.0665" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="23.8125" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="23.8125" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="23.8125" size="1.778" layer="27" display="off"/>
 </element>
 <element name="12" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="21.2725" smashed="yes">
 <attribute name="NAME" x="2.2225" y="21.9075" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="0.9525" y="21.5265" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="21.2725" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="21.2725" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="21.2725" size="1.778" layer="27" display="off"/>
 </element>
 <element name="14" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="18.7325" smashed="yes">
 <attribute name="NAME" x="2.2225" y="19.3675" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="0.9525" y="18.9865" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="18.7325" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="18.7325" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="18.7325" size="1.778" layer="27" display="off"/>
 </element>
 <element name="12V" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="11.7475" smashed="yes">
 <attribute name="NAME" x="0.9525" y="13.0175" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="0.9525" y="12.0015" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="11.7475" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="11.7475" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="11.7475" size="1.778" layer="27" display="off"/>
 </element>
 <element name="GND" library="solpad" package="LSP10" value="LSP10" x="0.9525" y="9.2075" smashed="yes">
 <attribute name="NAME" x="2.54" y="10.795" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="0.9525" y="9.4615" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="0.9525" y="9.2075" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="0.9525" y="9.2075" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="0.9525" y="9.2075" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JMP1" library="jump-0r-smd" package="C0R-JMP" value="0R-JUMPC" x="0.3175" y="5.715" rot="R180"/>
+<element name="JMP1" library="jump-0r-smd" package="C0R-JMP" value="0R-JUMPC" x="0.3175" y="5.715" rot="R180">
+<attribute name="OC_FARNELL" value="unknown" x="0.3175" y="5.715" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="" x="0.3175" y="5.715" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="0.3175" y="5.715" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="+12V" class="1">

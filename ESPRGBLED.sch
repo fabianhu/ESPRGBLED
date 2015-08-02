@@ -6695,12 +6695,12 @@ Solder type</description>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805K">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="08055C224KAZ2A"/>
-<attribute name="OC_FARNELL" value="2332797"/>
+<attribute name="OC_FARNELL" value="1759173RL"/>
 </part>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805K">
 <attribute name="MF" value="AVX"/>
 <attribute name="MPN" value="08055C224KAZ2A"/>
-<attribute name="OC_FARNELL" value="2332797"/>
+<attribute name="OC_FARNELL" value="1759173RL"/>
 </part>
 <part name="D1" library="diode" deviceset="MBRS130LT3" device="">
 <attribute name="MF" value="ON SEMICONDUCTOR"/>
@@ -6734,11 +6734,15 @@ Solder type</description>
 <attribute name="MPN" value="CR0603-J/-000ELF"/>
 <attribute name="OC_FARNELL" value="2467553"/>
 </part>
-<part name="MDL1" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E"/>
+<part name="MDL1" library="ESP8266-ESP12E" deviceset="ESP8266-12E" device="ESP8266-ESP12E">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="100k">
 <attribute name="MF" value="WELWYN"/>
 <attribute name="MPN" value="ASC0603-10KFT5"/>
-<attribute name="OC_FARNELL" value="2078915RL"/>
+<attribute name="OC_FARNELL" value="2078921"/>
 </part>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="10k">
 <attribute name="MF" value="WELWYN"/>
@@ -6746,14 +6750,42 @@ Solder type</description>
 <attribute name="OC_FARNELL" value="2078915RL"/>
 </part>
 <part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
-<part name="+" library="solpad" deviceset="LSP10" device=""/>
-<part name="13" library="solpad" deviceset="LSP10" device=""/>
-<part name="12" library="solpad" deviceset="LSP10" device=""/>
-<part name="14" library="solpad" deviceset="LSP10" device=""/>
-<part name="12V" library="solpad" deviceset="LSP10" device=""/>
-<part name="GND" library="solpad" deviceset="LSP10" device=""/>
+<part name="+" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="13" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="12" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="14" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="12V" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
+<part name="GND" library="solpad" deviceset="LSP10" device="">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 <part name="SUPPLY20" library="supply2" deviceset="DGND" device=""/>
-<part name="JMP1" library="jump-0r-smd" deviceset="0R-JUMP" device="C"/>
+<part name="JMP1" library="jump-0r-smd" deviceset="0R-JUMP" device="C">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -6834,7 +6866,11 @@ Solder type</description>
 <attribute name="MF" x="45.72" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="45.72" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="MDL1" gate="G$1" x="58.42" y="55.88" rot="R180"/>
+<instance part="MDL1" gate="G$1" x="58.42" y="55.88" rot="R180">
+<attribute name="OC_FARNELL" x="58.42" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="58.42" y="55.88" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="58.42" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R3" gate="G$1" x="96.52" y="33.02" rot="R90">
 <attribute name="OC_FARNELL" x="96.52" y="33.02" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="96.52" y="33.02" size="1.778" layer="96" display="off"/>
@@ -6846,14 +6882,42 @@ Solder type</description>
 <attribute name="MPN" x="96.52" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY12" gate="+12V" x="96.52" y="43.18"/>
-<instance part="+" gate="1" x="172.72" y="162.56" rot="R270"/>
-<instance part="13" gate="1" x="172.72" y="149.86" rot="R270"/>
-<instance part="12" gate="1" x="172.72" y="96.52" rot="R270"/>
-<instance part="14" gate="1" x="175.26" y="45.72" rot="R270"/>
-<instance part="12V" gate="1" x="22.86" y="147.32" rot="R270"/>
-<instance part="GND" gate="1" x="22.86" y="137.16" rot="R270"/>
+<instance part="+" gate="1" x="172.72" y="162.56" rot="R270">
+<attribute name="OC_FARNELL" x="172.72" y="162.56" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="172.72" y="162.56" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="172.72" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="13" gate="1" x="172.72" y="149.86" rot="R270">
+<attribute name="OC_FARNELL" x="172.72" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="172.72" y="149.86" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="172.72" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="12" gate="1" x="172.72" y="96.52" rot="R270">
+<attribute name="OC_FARNELL" x="172.72" y="96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="172.72" y="96.52" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="172.72" y="96.52" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="14" gate="1" x="175.26" y="45.72" rot="R270">
+<attribute name="OC_FARNELL" x="175.26" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="175.26" y="45.72" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="175.26" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="12V" gate="1" x="22.86" y="147.32" rot="R270">
+<attribute name="OC_FARNELL" x="22.86" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="22.86" y="147.32" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND" gate="1" x="22.86" y="137.16" rot="R270">
+<attribute name="OC_FARNELL" x="22.86" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="22.86" y="137.16" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="22.86" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY20" gate="G$1" x="96.52" y="7.62"/>
-<instance part="JMP1" gate="-0R" x="91.44" y="53.34" rot="R180"/>
+<instance part="JMP1" gate="-0R" x="91.44" y="53.34" rot="R180">
+<attribute name="OC_FARNELL" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="JMP1" gate="G$2" x="93.98" y="50.8" rot="R180"/>
 </instances>
 <busses>
