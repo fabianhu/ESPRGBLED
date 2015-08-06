@@ -6486,9 +6486,9 @@ chip 0805</description>
 Solder type</description>
 <wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
 <wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
-<smd name="2" x="0" y="0" dx="1" dy="0.8" layer="1" roundness="50"/>
-<smd name="3" x="0" y="-0.938" dx="0.8" dy="1" layer="1" roundness="100"/>
+<smd name="1" x="0" y="0.938" dx="1" dy="0.75" layer="1" roundness="60"/>
+<smd name="2" x="0" y="0" dx="1" dy="0.75" layer="1" roundness="50"/>
+<smd name="3" x="0" y="-0.938" dx="1" dy="0.75" layer="1" roundness="60"/>
 <text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
@@ -6597,9 +6597,9 @@ Solder type</description>
 <attribute name="OC_FARNELL" value="2125539"/>
 </part>
 <part name="T1" library="zetex" deviceset="NMOSSOT223" device="">
-<attribute name="MF" value="FAIRCHILD SEMICONDUCTOR"/>
-<attribute name="MPN" value="FDT439N"/>
-<attribute name="OC_FARNELL" value="1471058"/>
+<attribute name="MF" value="NXP"/>
+<attribute name="MPN" value="PMT21EN"/>
+<attribute name="OC_FARNELL" value="2069567"/>
 </part>
 </parts>
 <sheets>
@@ -6612,8 +6612,11 @@ Solder type</description>
 <attribute name="MF" x="78.74" y="66.04" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="78.74" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="T1" gate="A" x="78.74" y="53.34">
-<attribute name="OC_FARNELL" x="78.74" y="53.34" size="1.778" layer="96" display="both"/>
+<instance part="T1" gate="A" x="78.74" y="53.34" smashed="yes">
+<attribute name="OC_FARNELL" x="81.28" y="50.8" size="1.778" layer="96" display="both"/>
+<attribute name="MPN" x="81.28" y="53.34" size="1.778" layer="96"/>
+<attribute name="VALUE" x="81.28" y="53.34" size="1.778" layer="96"/>
+<attribute name="NAME" x="81.28" y="55.88" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
