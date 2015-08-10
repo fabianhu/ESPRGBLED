@@ -7058,19 +7058,22 @@ Solder type</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="48.26" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="50.8" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SIG"/>
-<pinref part="MDL1" gate="G$1" pin="RXD"/>
+<pinref part="MDL1" gate="G$1" pin="TXD"/>
+<wire x1="48.26" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="48.26" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="48.26" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="48.26" x2="27.94" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="5V"/>
-<pinref part="MDL1" gate="G$1" pin="TXD"/>
+<wire x1="27.94" y1="48.26" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="53.34" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="53.34" x2="38.1" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="MDL1" gate="G$1" pin="RXD"/>
+<wire x1="38.1" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
