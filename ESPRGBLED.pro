@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : D:/projekt/work/#Github/ESPRGBLED/ESPRGBLED.brd
 
-Start at      : 22:59:50 (18.07.2015)
-End at        : 22:59:52 (18.07.2015)
+Start at      : 14:46:28 (15.08.2015)
+End at        : 14:46:33 (15.08.2015)
 Elapsed time  : 
 
-Signals       :    16   RoutingGrid: 9.84252 mil  Layers: 2
-Connections   :    48   predefined:  44 ( 13 Vias )
+Signals       :    17   RoutingGrid: 3 mil  Layers: 2
+Connections   :    45   predefined:  45 ( 15 Vias )
 
-Router memory :   71920
+Router memory :   872032
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
 
-Time per pass     :          
-Number of Ripups  :         0         0         0         0         0
-max. Level        :         0         0         0         0         0
-max. Total        :         0         0         0         0         0
+Time per pass     :                    
+Number of Ripups  :         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         4         4         4         4         4
-Vias              :         3         1         1         1         1
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :         0         0         0         0         0         0         0         0         0         0
+Vias              :         0         0         0         0         0         0         0         0         0         0
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 95.8% beendet. Polygone könnten in mehrere Teile zerfallen sein.
+Final             : 100.0% beendet
