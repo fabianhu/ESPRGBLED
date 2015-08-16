@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
@@ -16,11 +16,11 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
@@ -1392,30 +1392,60 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" package="C0805K" value="10uF" x="9.37" y="5.5" smashed="yes" rot="R90">
-<attribute name="OC_FARNELL" value="1759421" x="9.37" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2320833" x="9.37" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="9.37" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MC0805X106K250CT" x="9.37" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C2" library="rcl" package="C0805K" value="10uF" x="7.55" y="5.5" smashed="yes" rot="R90">
-<attribute name="OC_FARNELL" value="1759421" x="7.55" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_FARNELL" value="2320833" x="7.55" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="7.55" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MC0805X106K250CT" x="7.55" y="5.5" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="L1" library="Fabian" package="TYS3010100M-10" value="L_10UH_560MA" x="12.05" y="2.76" smashed="yes" rot="R90"/>
-<element name="R1" library="rcl" package="R0402" value="" x="11.51" y="5.45" smashed="yes">
+<element name="L1" library="Fabian" package="TYS3010100M-10" value="L_10UH_560MA" x="12.05" y="2.76" smashed="yes" rot="R90">
+<attribute name="OC_FARNELL" value="2292503" x="12.05" y="2.76" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="LAIRD TECHNOLOGIES" x="12.05" y="2.76" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="TYS3010100M-10" x="12.05" y="2.76" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R1" library="rcl" package="R0402" value="61k9" x="11.51" y="5.45" smashed="yes">
 <attribute name="VALUE" x="10.875" y="3.545" size="1.27" layer="27"/>
+<attribute name="OC_FARNELL" value="1803730" x="11.51" y="5.45" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MULTICOMP" x="11.51" y="5.45" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MC00625W0402161K9" x="11.51" y="5.45" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R2" library="rcl" package="R0402" value="" x="11.52" y="6.69" smashed="yes" rot="R180">
+<element name="R2" library="rcl" package="R0402" value="20k" x="11.52" y="6.69" smashed="yes" rot="R180">
 <attribute name="VALUE" x="12.155" y="8.595" size="1.27" layer="27" rot="R180"/>
+<attribute name="OC_FARNELL" value="1469693" x="11.52" y="6.69" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="VISHAY DRALORIC" x="11.52" y="6.69" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CRCW040220K0FKED" x="11.52" y="6.69" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$2" library="Fabian" package="SOT23-5" value="TPS560200" x="8.54" y="2.16" smashed="yes" rot="R90"/>
+<element name="U$2" library="Fabian" package="SOT23-5" value="TPS560200" x="8.54" y="2.16" smashed="yes" rot="R90">
+<attribute name="OC_FARNELL" value="2373566" x="8.54" y="2.16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="TEXAS INSTRUMENTS" x="8.54" y="2.16" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="TPS560200DBVT" x="8.54" y="2.16" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="PAD1" library="wirepad" package="1,6/0,9" value="" x="5.7" y="1.65" smashed="yes">
 <attribute name="VALUE" x="5.7" y="2.25" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.7" y="1.65" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="5.7" y="1.65" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="5.7" y="1.65" size="1.778" layer="27" display="off"/>
 </element>
 <element name="PAD2" library="wirepad" package="1,6/0,9" value="" x="5.7" y="4" smashed="yes">
 <attribute name="VALUE" x="5.7" y="4.6" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.7" y="4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="5.7" y="4" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="5.7" y="4" size="1.778" layer="27" display="off"/>
 </element>
 <element name="PAD3" library="wirepad" package="1,6/0,9" value="" x="5.7" y="6.3" smashed="yes">
 <attribute name="VALUE" x="5.7" y="6.9" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="5.7" y="6.3" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="5.7" y="6.3" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="5.7" y="6.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="PAD4" library="wirepad" package="1,6/0,9" value="" x="13.65" y="4" smashed="yes">
 <attribute name="VALUE" x="13.65" y="4.6" size="0.0254" layer="27"/>
+<attribute name="OC_FARNELL" value="unknown" x="13.65" y="4" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="13.65" y="4" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="13.65" y="4" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
