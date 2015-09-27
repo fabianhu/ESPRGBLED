@@ -1,1 +1,1 @@
-dofile("server.lua")
+dofile("fritz.lua")
