@@ -9,9 +9,9 @@ level_r=0
 level_g=0
 level_b=0
 
-maxpwm = 50
+maxpwm = 100
 steppwm = 10
-interval = 1000
+interval = 500
 
 function split(s, delimiter)
     result = {};
@@ -83,6 +83,7 @@ end
 
 function fritzdisconn(sck,c)
     print("disconnection from FB")
+    mode = 0
     level_r = 1023
 end
 
@@ -125,7 +126,7 @@ function dolight()
             setupfade()
         end
     else 
-        mode =0
+        
     end
     
     if mode == 3 then -- cycle
@@ -185,6 +186,5 @@ tmr.alarm(1, 5000, 0, function()
 end)
 
 tmr.alarm(2, interval, 1, dolight)
-
 
 
