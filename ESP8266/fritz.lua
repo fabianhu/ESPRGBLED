@@ -11,7 +11,7 @@ level_b=0
 
 maxpwm = 100
 steppwm = 10
-interval = 500
+interval = 1000
 
 function split(s, delimiter)
     result = {};
@@ -85,6 +85,7 @@ function fritzdisconn(sck,c)
     print("disconnection from FB")
     mode = 0
     level_r = 1023
+	node.restart()
 end
 
 function pwmsetduty(pin,lvl)
@@ -121,13 +122,14 @@ end
 
 function dolight()
     ip,nm,gw = wifi.sta.getip()
-    if ip == nil then 
-        if mode ~= 3 then -- inc
-            setupfade()
-        end
-    else 
-        
-    end
+    if ip == nil then
+        print("ough")
+        tmr.alarm(1, 10000, 0, function() 
+            node.restart()
+        end)
+	else
+			tmr.stop(1)
+	end
     
     if mode == 3 then -- cycle
         level_r = inc(level_r)
@@ -182,9 +184,11 @@ tmr.alarm(1, 5000, 0, function()
         --sk:on("sent", fritzsent )
         
         sk:connect(1012,"192.168.1.1")
+		tmr.alarm(2, interval, 1, dolight)
     end
 end)
 
-tmr.alarm(2, interval, 1, dolight)
+
+
 
 
