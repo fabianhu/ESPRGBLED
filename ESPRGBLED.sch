@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -192,8 +192,8 @@
 <text x="1.905" y="-2.54" size="2.1844" layer="25">s</text>
 </package>
 <package name="TYS3010100M-10">
-<smd name="P$1" x="-1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
-<smd name="P$2" x="1.15" y="0" dx="2.7" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.15" y="0" dx="2.7" dy="1" layer="1" roundness="50" rot="R90"/>
+<smd name="P$2" x="1.15" y="0" dx="2.7" dy="1" layer="1" roundness="50" rot="R90"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="39"/>
 <wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="39"/>
 <wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="39"/>
@@ -6193,10 +6193,10 @@ http://www.zetex.com&lt;p&gt;
 <smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="1.0208" y="-4.318" size="0.8128" layer="51" ratio="12">3</text>
-<text x="1.905" y="2.54" size="0.8128" layer="51" ratio="12">4</text>
-<text x="-3.4526" y="-4.318" size="0.8128" layer="51" ratio="12">1</text>
-<text x="-1.2906" y="-4.3274" size="0.8128" layer="51" ratio="12">2</text>
+<text x="1.0208" y="-4.318" size="0.8128" layer="21" ratio="12">3</text>
+<text x="1.905" y="2.54" size="0.8128" layer="21" ratio="12">4</text>
+<text x="-3.4526" y="-4.318" size="0.8128" layer="21" ratio="12">1</text>
+<text x="-1.2906" y="-4.3274" size="0.8128" layer="21" ratio="12">2</text>
 <text x="-2.54" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
@@ -6496,9 +6496,9 @@ chip 0805</description>
 Solder type</description>
 <wire x1="0.61" y1="0.66" x2="0.61" y2="0.34" width="0.1524" layer="51"/>
 <wire x1="-0.61" y1="0.66" x2="-0.61" y2="0.34" width="0.1524" layer="51"/>
-<smd name="1" x="0" y="0.938" dx="1" dy="0.75" layer="1" roundness="60"/>
-<smd name="2" x="0" y="0" dx="1" dy="0.75" layer="1" roundness="50"/>
-<smd name="3" x="0" y="-0.938" dx="1" dy="0.75" layer="1" roundness="60"/>
+<smd name="1" x="0" y="1" dx="1" dy="0.85" layer="1" roundness="30"/>
+<smd name="2" x="0" y="0" dx="1" dy="0.85" layer="1" roundness="30"/>
+<smd name="3" x="0" y="-1" dx="1" dy="0.85" layer="1" roundness="30"/>
 <text x="-0.762" y="2.716" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.762" y="-3.986" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3235" y1="-0.6814" x2="0.3265" y2="0.7186" layer="51" rot="R270"/>
@@ -6587,7 +6587,7 @@ Solder type</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="power" width="1.27" drill="0">
+<class number="1" name="power" width="0.8" drill="0">
 </class>
 </classes>
 <modules>
@@ -6715,7 +6715,6 @@ Solder type</description>
 <attribute name="MPN" value="ASC0603-10KFT5"/>
 <attribute name="OC_FARNELL" value="2078915RL"/>
 </part>
-<part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
 <part name="+" library="solpad" deviceset="LSP10" device="">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
@@ -6753,15 +6752,14 @@ Solder type</description>
 </part>
 <part name="L1" library="Fabian" deviceset="L_10UH_560MA" device=""/>
 <part name="U$2" library="Fabian" deviceset="TPS560200" device=""/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R0402"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0402"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0402" value="61k9"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0402" value="20k"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805K" value="10uF">
 <attribute name="OC_FARNELL" value="1759421"/>
 </part>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805K" value="10uF">
 <attribute name="OC_FARNELL" value="1759421"/>
 </part>
-<part name="SUPPLY21" library="supply2" deviceset="+12V" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -6769,6 +6767,19 @@ Solder type</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805K" value="10uF">
+<attribute name="OC_FARNELL" value="1759421"/>
+</part>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805K" value="10uF">
+<attribute name="OC_FARNELL" value="1759421"/>
+</part>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0402" value="0R">
+<attribute name="MF" value="BOURNS"/>
+<attribute name="MPN" value="CR0603-J/-000ELF"/>
+<attribute name="OC_FARNELL" value="2467553"/>
+</part>
+<part name="SUPPLY4" library="supply2" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6817,7 +6828,6 @@ Solder type</description>
 <attribute name="MF" x="96.52" y="17.78" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="96.52" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY12" gate="+12V" x="96.52" y="43.18"/>
 <instance part="+" gate="1" x="172.72" y="162.56" rot="R270">
 <attribute name="OC_FARNELL" x="172.72" y="162.56" size="1.778" layer="96" display="off"/>
 <attribute name="MF" x="172.72" y="162.56" size="1.778" layer="96" display="off"/>
@@ -6848,12 +6858,13 @@ Solder type</description>
 <attribute name="MF" x="22.86" y="137.16" size="1.778" layer="96" display="off"/>
 <attribute name="MPN" x="22.86" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JMP1" gate="-0R" x="91.44" y="53.34" rot="R180">
-<attribute name="OC_FARNELL" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
-<attribute name="MF" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
-<attribute name="MPN" x="91.44" y="53.34" size="1.778" layer="96" display="off"/>
+<instance part="JMP1" gate="-0R" x="96.52" y="53.34" smashed="yes" rot="R180">
+<attribute name="OC_FARNELL" x="96.52" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="96.52" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="96.52" y="53.34" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="99.06" y="54.61" size="1.778" layer="95"/>
 </instance>
-<instance part="JMP1" gate="G$2" x="93.98" y="50.8" rot="R180"/>
+<instance part="JMP1" gate="G$2" x="99.06" y="50.8" rot="R180"/>
 <instance part="L1" gate="G$1" x="0" y="198.12"/>
 <instance part="U$2" gate="G$1" x="-40.64" y="193.04"/>
 <instance part="R5" gate="G$1" x="30.48" y="190.5" rot="R270"/>
@@ -6864,7 +6875,6 @@ Solder type</description>
 <instance part="C6" gate="G$1" x="60.96" y="193.04">
 <attribute name="OC_FARNELL" x="60.96" y="193.04" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="SUPPLY21" gate="+12V" x="-63.5" y="200.66"/>
 <instance part="GND4" gate="1" x="-22.86" y="182.88"/>
 <instance part="GND6" gate="1" x="30.48" y="165.1"/>
 <instance part="GND8" gate="1" x="48.26" y="180.34"/>
@@ -6872,6 +6882,19 @@ Solder type</description>
 <instance part="GND10" gate="1" x="10.16" y="38.1"/>
 <instance part="GND11" gate="1" x="40.64" y="22.86"/>
 <instance part="GND13" gate="1" x="96.52" y="7.62"/>
+<instance part="C1" gate="G$1" x="-76.2" y="193.04">
+<attribute name="OC_FARNELL" x="-76.2" y="193.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="-86.36" y="193.04">
+<attribute name="OC_FARNELL" x="-86.36" y="193.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND1" gate="1" x="-81.28" y="172.72"/>
+<instance part="R1" gate="G$1" x="-63.5" y="208.28" rot="R270">
+<attribute name="OC_FARNELL" x="-63.5" y="208.28" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MF" x="-63.5" y="208.28" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="-63.5" y="208.28" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="SUPPLY4" gate="+12V" x="-63.5" y="220.98"/>
 </instances>
 <busses>
 </busses>
@@ -6901,14 +6924,9 @@ Solder type</description>
 <pinref part="+" gate="1" pin="MP"/>
 </segment>
 <segment>
-<pinref part="SUPPLY12" gate="+12V" pin="+12V"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="96.52" y1="40.64" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="VIN"/>
-<wire x1="-55.88" y1="198.12" x2="-63.5" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY21" gate="+12V" pin="+12V"/>
+<pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="218.44" x2="-63.5" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -6977,6 +6995,15 @@ Solder type</description>
 <wire x1="96.52" y1="12.7" x2="96.52" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-76.2" y1="187.96" x2="-81.28" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-81.28" y1="187.96" x2="-86.36" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="175.26" x2="-81.28" y2="187.96" width="0.1524" layer="91"/>
+<junction x="-81.28" y="187.96"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -6984,14 +7011,14 @@ Solder type</description>
 <wire x1="81.28" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="66.04" x2="88.9" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="MDL1" gate="G$1" pin="VCC"/>
+<label x="83.82" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SUPPLY7" gate="G$1" pin="VCC"/>
 <wire x1="96.52" y1="88.9" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="81.28" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="JMP1" gate="-0R" pin="3"/>
-<wire x1="96.52" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="71.12" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="71.12" x2="96.52" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="P$2"/>
@@ -7008,9 +7035,10 @@ Solder type</description>
 <junction x="48.26" y="198.12"/>
 <wire x1="78.74" y1="198.12" x2="60.96" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<junction x="60.96" y="198.12"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="GPIO12" class="0">
 <segment>
 <wire x1="81.28" y1="60.96" x2="106.68" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="93.98" x2="106.68" y2="96.52" width="0.1524" layer="91"/>
@@ -7018,9 +7046,10 @@ Solder type</description>
 <wire x1="106.68" y1="60.96" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 <portref moduleinst="PWR2" port="CTL"/>
 <pinref part="MDL1" gate="G$1" pin="GPIO12"/>
+<label x="83.82" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="GPIO13" class="0">
 <segment>
 <wire x1="101.6" y1="114.3" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="63.5" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
@@ -7030,6 +7059,7 @@ Solder type</description>
 <portref moduleinst="PWR1" port="CTL"/>
 <wire x1="101.6" y1="149.86" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="MDL1" gate="G$1" pin="GPIO13"/>
+<label x="83.82" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7052,7 +7082,7 @@ Solder type</description>
 <wire x1="38.1" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="GPIO14" class="0">
 <segment>
 <wire x1="88.9" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="58.42" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
@@ -7060,6 +7090,7 @@ Solder type</description>
 <portref moduleinst="PWR3" port="CTL"/>
 <wire x1="88.9" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="MDL1" gate="G$1" pin="GPIO14"/>
+<label x="83.82" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="1">
@@ -7083,40 +7114,44 @@ Solder type</description>
 <pinref part="14" gate="1" pin="MP"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="GPIO0" class="0">
 <segment>
 <wire x1="48.26" y1="58.42" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="58.42" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="MDL1" gate="G$1" pin="GPIO0"/>
+<label x="45.72" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="ADC" class="0">
 <segment>
-<wire x1="96.52" y1="25.4" x2="86.36" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="25.4" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="25.4" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="MDL1" gate="G$1" pin="ADC"/>
-<wire x1="86.36" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="27.94" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
 <junction x="96.52" y="25.4"/>
 <wire x1="96.52" y1="25.4" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
+<label x="83.82" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="CH_PD" class="0">
 <segment>
 <pinref part="MDL1" gate="G$1" pin="CH_PD"/>
 <pinref part="JMP1" gate="-0R" pin="2"/>
-<wire x1="88.9" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<label x="83.82" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="REST" class="0">
 <segment>
 <pinref part="JMP1" gate="-0R" pin="1"/>
-<wire x1="91.44" y1="50.8" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="50.8" x2="96.52" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="MDL1" gate="G$1" pin="REST"/>
-<wire x1="91.44" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="48.26" x2="81.28" y2="48.26" width="0.1524" layer="91"/>
+<label x="83.82" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -7139,6 +7174,32 @@ Solder type</description>
 <wire x1="-60.96" y1="172.72" x2="-60.96" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VSENSE"/>
 <wire x1="-60.96" y1="187.96" x2="-55.88" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VIN" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="40.64" x2="96.52" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="40.64" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="12.7" x2="106.68" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="-22.86" x2="-106.68" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="-22.86" x2="-106.68" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="-55.88" y1="198.12" x2="-63.5" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="198.12" x2="-71.12" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="198.12" x2="-76.2" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-76.2" y1="198.12" x2="-76.2" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-76.2" y1="198.12" x2="-86.36" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="198.12" x2="-86.36" y2="195.58" width="0.1524" layer="91"/>
+<junction x="-76.2" y="198.12"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="203.2" x2="-63.5" y2="198.12" width="0.1524" layer="91"/>
+<junction x="-63.5" y="198.12"/>
+<wire x1="-106.68" y1="210.82" x2="-71.12" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="210.82" x2="-71.12" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
